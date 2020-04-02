@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 
 cap = cv2.VideoCapture(src="rtsp://admin:afeka2016@192.168.1.67:554/Streaming/Channels/101/")
+
 FRAME_WIDTH = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 FRAME_HIGTH = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 print('Frame Size: ', FRAME_WIDTH, 'x', FRAME_HIGTH)
